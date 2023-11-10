@@ -1,0 +1,426 @@
+html{
+    font-size: calc(100vw / 1440 * 10);
+}
+body{
+    font-family: 'Inter';
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* Header start*/
+
+.header{
+    position: absolute;
+    top: 25.7rem;
+    right: -20rem;
+    display: flex;
+    gap: 5.9rem;
+    transform: rotate(90deg);
+    align-items: center;
+}
+.nav{
+    display: flex;
+    gap: 3.5rem;
+    border-right: 1px solid #525252;
+    padding: 1.4rem;
+    padding-right: 5.6rem;
+}
+.nav-link{
+    font-size: 1.6rem;
+    color: #525252;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.nav-link.active{
+    color: #002C6C;
+    font-weight: 800;
+}
+.logo-txt{
+    color: #CACACA;
+    font-size: 1.6rem;
+}
+
+/* Header end*/
+
+/* Main start*/
+.section-main{
+    width: 100%;
+    display: flex;
+    gap: 1.6rem;
+}
+.animate-word{
+    width: 47.7rem;
+    overflow: hidden;
+}
+#q{
+    height: 78rem !important;
+}
+
+.main-info{
+    padding-top: 6.6rem ;
+}
+.mian-info__content{
+    width: 85.6rem;
+    padding: 9.8rem 1.1rem 7.2rem;
+    background: url('../images/Image.jpg');
+    background-size: cover;
+}
+.main-title{
+    font-family: 'Roboto Flex';
+    font-size: 9.6rem;
+    color: #002C6C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-title2{
+    font-family: 'Roboto Flex';
+    font-size: 6.2rem;
+    color: #002C6C;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+}
+.main-subtitle{
+    color: #232323;
+    font-family: 'Roboto Flex';
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    line-height: 120%;
+    margin-bottom: 7.5rem;
+}
+.main-btn{
+    padding: 2.4rem 3.1rem;
+    background: #2F2F2F;
+    border: 1px solid #FFF;
+    color: #FBFBFB;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 500;
+}
+.main-info_text{
+    width: 85.6rem;
+    margin-top: 2.2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #A6A6A6;
+}
+.main-info_text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #6E6E6E;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    position: relative;
+}
+.main-info_text p:nth-child(2){
+    color: #929292;
+}
+.main-info_text p:nth-child(3){
+    color: #BDBDBD;
+}
+.decor-vector{
+    position: absolute;
+    top: 2.6rem;
+    right: 28.4rem;
+}
+.decor-vector svg{
+    width: 11.7287rem;
+    height: 9.9729rem;
+}
+.productions{
+    padding-top: 10.9rem;
+    padding-bottom: 4.9rem;
+}
+.productions-title{
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #323232;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+.productions-title span{
+    color: #002C6C;
+}
+.production-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40rem;
+    height: 38.6rem;
+    background-color: gray;
+    padding: 3rem 2.9rem 3rem 2.5rem;
+    background-size: cover !important;
+    position: relative;
+    transition: all .3s;
+}
+.production-item:nth-child(1) .production-item__top{
+    justify-content: flex-end;
+}
+.production-item:nth-child(1){
+    padding-top: 3.8rem;
+}
+.production-item__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 7;
+}
+.production-item__top p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.production-item__main{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 7;
+}
+.production-item__main p{
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 31rem;
+}
+.production-item__main svg{
+    width: 3.2rem;
+    height: 3.2rem;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+.production-item:hover .production-item__main svg{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.productions-inblocks{
+    background: #AEAEAE;
+    display: flex;
+    gap: 0.15rem;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 6.8rem;
+}
+.prod-btn{
+    border: 1px solid #000;
+    padding: 2.6rem 10rem;
+    color: #2B2B2B;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+}
+.production-item__top svg{
+    width: 4.7rem;
+    height: 4.7rem;
+}
+.production-item:hover::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(173, 173, 173, 0.50) 0%, rgba(173, 173, 173, 0.50) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%) lightgray 50% / cover no-repeat;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all .3s;
+}
+.production-item:nth-child(2) .production-item__main p{
+    width: 50rem;
+}
+.productions-inner{
+    position: relative;
+}
+.productions-gray__bg{
+    position: absolute;
+    z-index: -1;
+    width: 115.5rem;
+    height: 37.2rem;
+    background: linear-gradient(180deg, rgba(251, 251, 251, 0.60) -5.34%, rgba(255, 255, 255, 0.00) 100%), rgba(217, 217, 217, 0.80);
+    left: 7.1rem;
+    top: -2.3rem;
+}
+.productions-dots{
+    position: absolute;
+    width: 15.6rem;
+    height: 18.6rem;
+    z-index: 1;
+    right: -6.2rem;
+    top: -7rem;
+}
+.menu-nav{
+    display: flex;
+    gap: 3.6rem;
+    align-items: center;
+    background-color: #fff;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -20rem;
+    top: 43%;
+    padding: 2.9rem 3.5rem;
+}
+
+.menu-nav nav{
+    border-right: none;
+    padding-right: 0;
+    border-left: 1px solid #525252;
+    padding-left: 5.6rem;
+}
+
+.sphere{
+    position: relative;
+    width: 100%;
+    min-height: 71.9rem;
+    background-color: #232323;
+}
+
+  .space-holder {
+    position: relative;
+    width: 100% !important;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 71.9rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  
+  .cards {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 13rem;
+  }
+  
+  .sample-card {
+    position: relative;
+    height: 30rem;
+    width: 50rem;
+    background-color: #111f30;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+  .spheres-info{
+    width: 59rem;
+    margin-right: 32.5rem;
+  }
+  .spheres-info__title{
+    font-size: 6.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #DFDFDF;
+    margin-bottom: 3.2rem;
+  }
+  .spheres-info__title span{
+    color: #002C6C;
+    display: block;
+  }
+  .sphreres-text{
+    font-size: 2.4rem;
+    color: #B4B4B4;
+    letter-spacing: -0.024rem;
+  }
+  .spheres{
+    display: grid;
+    grid-template-columns: repeat(3, 38.2rem);
+  }
+  .spheres-item{
+    height: 35.9rem;
+    background-color: #292929;
+    padding: 4.1rem 0.8rem 3.7rem 2.7rem;
+  }
+  .spheres-item:first-child{
+    background-color: #002C6C;
+    border-right: 1px solid #797979;
+    border-bottom: 1px solid #797979;
+  }
+  .spheres-item:nth-child(2){
+    border-right: 1px solid #797979;
+    border-bottom: 1px solid #797979;
+  }
+  .spheres-item:nth-child(3){
+    border-bottom: 1px solid #797979;
+  }
+  .spheres-item:nth-child(4){
+    border-right: 1px solid #797979;
+  }
+  .spheres-item:nth-child(5){
+    border-right: 1px solid #797979;
+  }
+  .spheres-name{
+    color: #DCDCDC;
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding-bottom: 2.6rem;
+    position: relative;
+    margin-bottom: 2.6rem;
+  }
+  .spheres-name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 8.5rem;
+    height: 0.2rem;
+    background: #B2B2B2;
+  }
+  .spheres-text{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 123.523%;
+    color: #CECECE;
+  }
+  .sphares-bg__text{
+    position: absolute;
+    font-size: 21rem;
+    color: rgba(223, 223, 223, 0.05);
+    line-height: 81.523%; /* 171.198px */
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 2.3rem;
+    left: 70.8rem;
+  }
+  .horizontal{
+    overflow: hidden;
+  }
+
+
+/* Main end*/
+
+/* Footer start*/
+
+
+
+/* Footer end*/
+
+/* Adaptive start*/
+
+
+
+/* Adaptive end*/
